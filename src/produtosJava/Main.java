@@ -8,13 +8,21 @@ public class Main {
 	GerenciarProdutos loja = new GerenciarProdutos();
 	
 	
-	loja.adicionar(new Produto("Teclado", 200.00, 10));
-    loja.adicionar(new Produto("Mouse", 120.00, 15));
-    loja.adicionar(new Produto("Computador", 1800.00, 5));
-    loja.adicionar(new Produto("Headset", 90.00, 20));
+//	loja.adicionar(new Produto("Teclado", 200.00, 10));
+//    loja.adicionar(new Produto("Mouse", 120.00, 15));
+//    loja.adicionar(new Produto("Computador", 1800.00, 5));
+//    loja.adicionarPedido("Teclado");
+//    loja.adicionarPedido("Computador");
 //    loja.listarProduto();
+//    loja.listarPedido();
+//    System.out.println("Pesquise o produto: ");
+//	String nome = sc.nextLine();
+//	loja.buscar(nome);
+//	loja.remover("Teclado");
+//	loja.listarProduto();
     
-	int opcao=-1;
+    
+	int opcao=0;
 	while(opcao!=0) {
 		System.out.println("\n ===MENU===");
 		System.out.println("1- Add produtos");

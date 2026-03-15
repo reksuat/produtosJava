@@ -38,10 +38,20 @@ public class GerenciarProdutos {
 	public Produto buscar(String nome) {
 		for(Produto p : listaProdutos) {
 			if (p.getNome().contains(nome)) {
-				return p;
+			        System.out.println("Produto: " + p.getNome() + " | R$ " + p.getValor());
+			        return p;
+			    }
 			}
-		}
 		return null;
+	}
+	public void remover(String nome) {
+	    boolean removido = listaProdutos.removeIf(p -> p.getNome().equalsIgnoreCase(nome));
+	    
+	    if (removido) {
+	        System.out.println("Produto removido com sucesso!");
+	    } else {
+	        System.out.println("Produto não encontrado.");
+	    }
 	}
 	
 	public void adicionarPedido(String nome) {
