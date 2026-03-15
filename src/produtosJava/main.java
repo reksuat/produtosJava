@@ -11,8 +11,9 @@ public class main {
     loja.adicionar(new Produto("Mouse", 120.00, 15));
     loja.adicionar(new Produto("Computador", 1800.00, 5));
     loja.adicionar(new Produto("Headset", 90.00, 20));
+    loja.listarProduto();
     
-	int opcao=-1;
+	int opcao=0;
 	
 	while(opcao!=0) {
 		System.out.println("\n ===MENU===");
