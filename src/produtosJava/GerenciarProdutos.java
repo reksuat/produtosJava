@@ -64,6 +64,7 @@ public class GerenciarProdutos {
 	    }
 	}
 	public void listarPedido() {
+		double total=0;
 		if(listaPedido.isEmpty()) { 
 			System.out.println("Você ainda não fez nenhum pedido!");	
 	}
@@ -72,6 +73,9 @@ public class GerenciarProdutos {
 			for(Produto p: listaPedido) {
 				System.out.println("- " + p.getNome() + " | R$ " + p.getValor());
 			}
+			for(Produto p: listaPedido) {
+				total+=p.getValor();
+				System.out.println("Total do pedido: "+total);
 		}
 	}
 }
